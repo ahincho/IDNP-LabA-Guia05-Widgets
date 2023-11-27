@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_demote"
+    android:orientation="vertical"
+    tools:context=".ListActivity">
+    <EditText
+        android:id="@+id/etApplicantFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/search_applicants_by_document"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        tools:ignore="VisualLintTextFieldSize" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvApplicants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
